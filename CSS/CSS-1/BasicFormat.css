@@ -1,0 +1,9 @@
+/* Basic Format of CSS */
+h1{
+    color: red;
+}
+/* 
+h1 -> selector
+color -> property
+red -> value 
+*/
