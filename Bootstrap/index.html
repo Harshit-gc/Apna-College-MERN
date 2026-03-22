@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- If we add our local external css file after linking bootstrap css then external css file will override the 
+    styling properties of bootstrap because it is linked after bootstrap css. -->
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+
+    <!-- Navbar Component -->
+    <nav class="navbar bg-body-tertiary  navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Brand Name</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav">
+                <a class="nav-link">Home</a>
+                <a class="nav-link">Contact</a>
+                <a class="nav-link">About Us</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container Layout -->
+    <div class="container-md">
+        <h2>Bootstrap Demo</h2>
+
+        <!-- Card Component -->
+         <div class="card" style="width: 18rem;">
+            <img src="photo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+         </div>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque impedit sint molestiae pariatur aliquid nobis animi ratione, libero doloribus autem veniam earum, repellendus quos veritatis suscipit accusantium consequuntur dolor explicabo!
+            Voluptates consequatur accusantium in temporibus ducimus natus, rem nobis iure suscipit corporis a minus quas expedita velit accusamus tempora eos repudiandae fugit modi inventore pariatur? Culpa expedita perspiciatis neque ad.
+            Magnam fugit recusandae optio. Earum, eaque. Quas aspernatur eius libero optio tempora deleniti beatae maxime dolorem a. Neque, fugiat! Blanditiis tempora atque dolorum officiis accusantium dolore officia modi odit porro?
+            Neque, odio eius repudiandae esse sed amet accusantium debitis repellat, est mollitia quis dolores deserunt! Libero dicta veniam non aliquam, minus quia quisquam incidunt! Eaque voluptate temporibus blanditiis culpa repellat!
+            Dolorum, temporibus labore officiis tempore quis cupiditate laboriosam fugit dolores. Numquam officia repellendus molestiae. Eum maiores, explicabo ad, at aut temporibus, quae quisquam molestiae nostrum illum quia nam ullam perspiciatis!
+        </p>
+
+    <!-- Button Component -->
+    <button>click me</button>
+    <button class="btn btn-danger">Click Me</button>
+    <a href="#" class="btn btn-dark">Google.com</a>
+    <br>
+
+    <!-- Badge Component -->
+    <span class="badge bg-secondary">new</span>
+    <br>
+    <button class="btn btn-primary">
+        Followers
+        <span class="badge bg-dark">100+</span>
+    </button>
+    </div>
+
+    <!-- Alert Component -->
+    <div class="alert alert-danger">Download Failed! Please try again</div>
+    <div class="alert alert-success alert-dismissible">
+        Congratulations!!!
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <!-- Button Group -->
+    <div class="container">
+        <div class="btn-group"><div class="btn btn-success">one</div>
+        <div class="btn btn-success">two</div>
+        <div class="btn btn-success">three</div></div>
+    </div>
+    <br>
+    
+
+    <!-- Grid Layout -->
+     <div class="conatiner">
+        <div class="row">
+             <div class="col-4 bg-success">one</div>
+             <div class="col-8 bg-danger">two</div>
+        </div>
+        <br>
+        <div class="row">
+             <div class="col-md-2 bg-success">one</div>
+             <div class="col-md-8 bg-danger">two</div>
+             <div class="col-md-2 bg-success">three</div>
+        </div>
+        <br>
+        <div class="row align-items-end">
+            <div class="col bg-success">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quia saepe quae magnam eligendi ducimus reprehenderit totam amet, modi incidunt temporibus velit. Quae dolorem maxime eius magnam? Quaerat, at qui?</div>
+            <div class="col bg-warning">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quia saepe quae magnam eligendi ducimus reprehenderit totam amet, modi incidunt temporibus velit. Quae dolorem maxime eius magnam? Quaerat, at qui? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto nostrum dolorum vitae pariatur, nisi corporis! Nobis provident eligendi repellat ad at laboriosam harum odit nostrum, iste nisi consequatur incidunt possimus?</div>
+            <div class="col bg-success">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quia saepe quae magnam eligendi ducimus reprehenderit totam amet, modi incidunt temporibus velit. Quae dolorem maxime eius magnam? Quaerat, at qui?</div>
+            <div class="col bg-danger align-self-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quia saepe quae magnam eligendi ducimus reprehenderit totam amet, modi incidunt temporibus velit. Quae dolorem maxime eius magnam? Quaerat, at qui?</div>
+
+        </div>
+     </div>
+     <br>
+
+    <!-- Forms -->
+     <div class="container">
+        <form class="mb-3">
+            <div class="row">
+            <div class="mb-3 col-md-6">
+                <label class="form-label" for="email">Email</label>
+                <input type="text" class="form-control" placeholder="Email" id="email">
+            </div>
+            <div class="mb-3 col-md-6">
+                <label class="form-label" for="pass">Password</label>
+                <input type="password" class="form-control" placeholder="Password" id="pass">
+            </div>
+            </div>
+            <div class="mb-3">
+                <select class="form-select">
+                    <option selected>Select Something</option>
+                    <option value="1">one</option>
+                    <option value="2">two</option>
+                    <option value="3">three</option>
+                </select>
+            </div>
+            <div class="mb-3 form-check">
+                <label for="agree" class="form-check-label">Agree</label>
+                <input type="checkbox" id="agree" class="form-check-input">
+            </div>
+            <div class="mb-3 form-check">
+                <label for="radiobs" class="form-check-label">Yes/No</label>
+                <input type="radio" id="radiobs" class="form-check-input">
+            </div>
+        </form>
+     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
